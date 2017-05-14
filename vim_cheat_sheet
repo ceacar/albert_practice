@@ -1,0 +1,42 @@
+
+
+
+
+
+g+g #to the first line
+shift+g # to the last line
+x #delete character
+d+d # delete word
+p #paste behind current cursor
+shift + p # paste ahead of the current cursor
+o # create new line and enter insert mode
+u # cancel the previous move
+ctrl+r # repeat previous move
+u and ctrl+r will not be counted to the move
+v #select context you want
+v+d #delete the selected context
+v+x #cut the selected context
+ctrl+v #select the colum you want
+  shift+i #type the word you want to add in
+ctrl+>*2 #leave space ahead of the line
+ctrl+<*2 #move the line to the left
+c #add space into the cursor
+. #repeat continued previous move
+h #left
+k #up
+j #down
+l #right
+shift+i #to the line start and insert
+shift+a #to the line end and insert
+:+ w # save file
+:+ q # quit file
+s+two character # search word
+$ #to the line end
+0 #to the line start
+d+w #delete word
+page up&down #word meaning
+ctrl+d or u # d to the next half page  u to the previous half page
+/+type the word #find the first word you type
+n# next word
+shift + n # previous word
+:+q! #quit the file anyway
