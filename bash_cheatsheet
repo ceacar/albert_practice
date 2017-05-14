@@ -1,0 +1,7 @@
+ls #show the list
+cd #open the directory
+pwd #show the current directory path
+clear #cancel the previous print out
+echo "any word" #print the any word
+the_var="any word" #put the_var to the any word
+

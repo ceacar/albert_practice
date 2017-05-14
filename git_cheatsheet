@@ -1,0 +1,7 @@
+git add file #the files you will upload
+git commit -m"the description of the command" #save the change of all the file added and promise to upload the changes
+git push origin master# upload from your local laptop to the git hub masterbranch
+git pull origin master# pull from git hub masterbrunch to your local laptop
+git status #the change between the current commit and previous commit
+there is a remote update and you are trying to git push and they all changed the same line, so you have to run git pull origin master first then it will show there will be a conflict on the file then vim the file to keep the line you want and remove other lines then save and quit the file then run git add and git push
+git log# see the change

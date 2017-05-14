@@ -1,0 +1,3 @@
+tmux #type this cmd in terminal
+TMUX_HOTKEY+c #use tmux to creat a new window #type exit and enter to exit the window
+TMUX_HOTKEY+number to switch pane
