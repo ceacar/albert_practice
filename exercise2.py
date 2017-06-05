@@ -5,7 +5,6 @@
     #LETTERS 10
     #DIGITS 3
 
-#>>>this "function_name" is not a proper function name, it should be character_classifier.
 def character_classifier(s):
     d=l=0
     for c in s:
@@ -15,7 +14,17 @@ def character_classifier(s):
             l=l+1
         else:
             pass
-    #>>>why are you returning s which is the input of this function. i assume you want to return the d, l to the outside
+    #you need to convert d and l to int by using  int(d), int(l)
     return d, l
+
+#you need to remove this line, cause there are no d, l defined in outer scope, system doesn't know who are they, and i m not sure what are you trying to do here
 print d, l
-#>>these two doesn't have l and d defined ( they are defined in the function above, but not defined in the global
+
+
+#DO NOT DELETE
+#YOU NEED THESE LINES TO RUN FOR THE RESULT
+s = "hello world! 123"
+classified_result = character_classifier(s)
+print "LETTERS", classified_result["LETTERS"]
+print "DIGITS", classified_result["DIGITS"]
+
