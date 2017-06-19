@@ -3,6 +3,29 @@
 #3. use your host's public key to encrypt a file and then decrypt it and print it out
 
 
+
+#please read this:
+    #https://en.wikipedia.org/wiki/Public-key_cryptography
+#in your terminal, type: pip3 install pycrypto
+
+#read this:
+    #AES encryption
+    #https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+
+#read this:
+    #RSA encrytption
+    #https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+
+#watch this video:
+    #https://www.youtube.com/watch?v=8PzDfykGg_g
+
+#now do the assignment
+
+
+
+
+
+
 choice = ''
 message = ''
 choice = ''
