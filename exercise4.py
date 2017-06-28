@@ -26,25 +26,24 @@
 
 
 
-choice = ''
-message = ''
-choice = ''
+from Crypto.Cipher import AES
+import base64
+import os
 
-while choice != 0:
-    choice = input("\nEnter 1 to encrypt and 2 to decrypt")
 
-    if choice == '1':
-        message = input("\nEnter Message: ")
-        for i in range(0, len(message)):
-            result = result + chr(ord(message[i] - 2)
+def encryption(privateInfo) :
+    BLOCK_SIZE = 16
+    PADDING ='JOJO'
 
-        print(result + '\n\n')
-        result = ''
 
-    elif choice == '2'
-        message = input("\nEnter Message: ")
-        for i in range(0,len(message)):
-            result = result + chr(ord(message[i]) + 2)
+    pad = lambda s: s + (BLOCK_SIZE - len(s) & BLOCK_SIZE) * PADDING
 
-        print(result + '\n\n')
-        result = ''
+    EncodeAES = lambda c, s: base64.b64encode(c.encrypt(pad(s)))
+
+    secret = os.urandom(BLOCK_SIZE)
+    print 'encryption key:', secret
+
+    cipher = AES.new(secret)
+
+    encoded = EncodeAES(cipher. privateInfo)
+    print 'Encrypted string:', encoded
