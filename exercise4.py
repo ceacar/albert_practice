@@ -39,7 +39,7 @@ def encryption(privateInfo) :
     pad = lambda s: s + (BLOCK_SIZE - len(s) & BLOCK_SIZE) * PADDING
 
     EncodeAES = lambda c, s: base64.b64encode(c.encrypt(pad(s)))
-
+    # I WANT YOU TO USE PUBLIC KEY WHICH IS IN ~/.ssh/id_rsa.pub
     secret = os.urandom(BLOCK_SIZE)
     print 'encryption key:', secret
 
@@ -47,3 +47,7 @@ def encryption(privateInfo) :
 
     encoded = EncodeAES(cipher. privateInfo)
     print 'Encrypted string:', encoded
+
+#where is the decryption function?
+
+#i don't believe you can run this script with only a function definition, you even didn't call this function
