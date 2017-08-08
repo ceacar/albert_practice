@@ -3,12 +3,6 @@
 
 
 
-def return_demo():
-    print 1
-    print 2
-    return lambda x: 2*x
-    print 3
-
 #print return_demo()
 
 
@@ -16,8 +10,18 @@ def isSymmetrical(input_str):
     #implement here
     #compare first character and last character?
     #compare 2nd and n-1
+    mid_point = len(input_str) / 2
 
+    for i in range (0,mid_point):
+        print(i)
+        print(len(input_str) -i -1)
+        print(input_str[i])
+        print(input_str[len(input_str) -i -1])
+        if (input_str[i] != input_str[len(input_str) -i -1]):
+            return False
+    return True
 
+print isSymmetrical("abcba")
 
     #step1. need to know the length of string
 
@@ -44,5 +48,4 @@ def isSymmetrical(input_str):
     #4. for loop
 
 
-isSymmetrical("abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba")
 
