@@ -22,16 +22,19 @@
 #now do the assignment
 
 
-
-
-
-
 from Crypto.Cipher import AES
 import base64
 import os
 
 
+def double_size(input_int):
+    return 2*input_int
+
+double_size_short=lambda x: 2*x
+
+
 def encryption(privateInfo) :
+    # anan can do this
     BLOCK_SIZE = 16
     PADDING ='JOJO'
 
@@ -45,9 +48,10 @@ def encryption(privateInfo) :
 
     cipher = AES.new(secret)
 
-    encoded = EncodeAES(cipher. privateInfo)
+    encoded = EncodeAES(cipher, privateInfo)
     print 'Encrypted string:', encoded
 
 #where is the decryption function?
-
+input_string = "1234567890123456"
+encryption(input_string)
 #i don't believe you can run this script with only a function definition, you even didn't call this function
