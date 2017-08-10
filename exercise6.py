@@ -8,6 +8,15 @@
 #calculate total dollar amount for each symbol
 #calcualte each symbol's variance
 
+#needed tip:
+#open('file_path','r')
+#readline
+#rstrip, split 
+#for k,v in the_dict.iteritems()
+
+
+
+
 aaplstock = {'aapl1':[1.01,'100'], 'aapl2':[1.07,'100'], 'aapl3':[1.40,'100'] }
 spystock = {'spy1':[0.85,'150'], 'spy2':[0.99,'150'], 'spy3':[0.55,'150']}
 msftstock = {'msft1':[2.15,'99'], 'msft2':[2.39,'99'], 'msft3':[3.84,'99']}
